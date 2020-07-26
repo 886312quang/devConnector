@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://ahoochat:ahoochat@cluster0.a1qep.mongodb.net/ahoochat?retryWrites=true&w=majority"
+}
