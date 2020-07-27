@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://ahoochat:ahoochat@cluster0.a1qep.mongodb.net/ahoochat?retryWrites=true&w=majority",
-  "jwtSecret": "jwtSecret"
+  "jwtSecret": "jwtSecret",
+  "githubClientId": "ee23c564d5b638ec9781",
+  "githubSecret": "25129b291e9aec691a7c6fc2ab389c54eafb2c22"
 }
