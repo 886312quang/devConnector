@@ -24,7 +24,7 @@ export const getPost = (id) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -44,7 +44,7 @@ export const getPosts = () => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -64,7 +64,7 @@ export const addLike = (id) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -84,7 +84,7 @@ export const removeLike = (id) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -106,7 +106,7 @@ export const deletePost = (id) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -134,7 +134,7 @@ export const addPost = (formData) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -166,7 +166,7 @@ export const addComment = (postId, formData) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
@@ -197,7 +197,7 @@ export const deleteComment = (postId, commentId) => async (dispatch) => {
     dispatch({
       type: POST_ERROR,
       payload: {
-        msg: error.response.statusText,
+        msg: error.response.msg,
         status: error.response.status,
       },
     });
