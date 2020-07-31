@@ -62,7 +62,6 @@ export const getProfileById = (userId) => async (dispatch) => {
       type: GET_PROFILE,
       payload: res.data,
     });
-
   } catch (error) {
     dispatch({
       type: PROFILE_ERROR,
@@ -252,7 +251,7 @@ export const deleteEducation = (id) => async (dispatch) => {
 export const deleteAccount = () => async (dispatch) => {
   if (window.confirm("Are you sure? This can NOT be undone!")) {
     try {
-      await axios.delete(`/api/profile`);
+      await axios.delete("/api/profile");
 
       dispatch({
         type: CLEAR_PROFILE,
@@ -263,6 +262,7 @@ export const deleteAccount = () => async (dispatch) => {
 
       dispatch(setAlert("Your account has been permanently remove", "success"));
     } catch (error) {
+      console.log(error);
       dispatch({
         type: PROFILE_ERROR,
         payload: {
